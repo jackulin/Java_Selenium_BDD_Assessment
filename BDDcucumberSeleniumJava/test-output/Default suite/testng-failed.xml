@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="steps.AmazonShopping_steps_Tests">
+        <methods>
+          <include name="searching_for_camera"/>
+          <include name="click_continue"/>
+          <include name="click_add_to_cart"/>
+          <include name="click_signin"/>
+          <include name="i_am_on_amazon_homepage"/>
+          <include name="select_camera"/>
+          <include name="validating_the_camara_name_and_price"/>
+          <include name="getting_its_name_and_price"/>
+          <include name="click_on_refresh_and_cart_symbol"/>
+          <include name="i_am_clicking_on_signin"/>
+          <include name="provide_email"/>
+          <include name="provide_password"/>
+          <include name="navigate_to_camera_page"/>
+          <include name="i_am_in_cart_page"/>
+          <include name="i_am_in_signed_in_homepage"/>
+        </methods>
+      </class> <!-- steps.AmazonShopping_steps_Tests -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

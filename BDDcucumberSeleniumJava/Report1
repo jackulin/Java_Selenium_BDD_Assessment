@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="115.037">
+<testcase classname="Unknown" name="Signing in" time="38.715">
+<system-out><![CDATA[Given I am on Amazon Homepage 'https://www.amazon.in/'......................passed
+When I am clicking on signin................................................passed
+Then provide email 'jackulinshanu@gmail.com'................................passed
+And click continue..........................................................passed
+And provide password 'Jackulin1998@17'......................................passed
+And click signin............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="Selecting camera" time="45.821">
+<system-out><![CDATA[Given I am in signed in Homepage............................................passed
+When Searching for camera 'Fujifilm Instax Mini 9 Instant Camera (Ice Blue)'.passed
+Then Navigate to camera page................................................passed
+And Select camera...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="Adding camera to cart" time="25.71">
+<system-out><![CDATA[Given I am in selected camera page..........................................passed
+When Click Add to cart......................................................passed
+Then click on refresh and cart symbol.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Unknown" name="validation of camara name and price" time="0.372">
+<failure message="3,965.00 expected:&lt;[3,965.00]&gt; but was:&lt;[same price]&gt;" type="org.junit.ComparisonFailure"><![CDATA[Given I am in cart page.....................................................passed
+When getting its name and price.............................................passed
+Then validating the camara name and price...................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: 3,965.00 expected:<[3,965.00]> but was:<[same price]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at steps.AmazonShopping_steps_Tests.validating_the_camara_name_and_price(AmazonShopping_steps_Tests.java:162)
+	at ✽.validating the camara name and price(file:///C:/Users/91979/eclipse-workspace/new-workspace/BDDcucumberSeleniumJava/features/Amazon_shopping.feature:29)
+]]></failure>
+</testcase>
+</testsuite>
