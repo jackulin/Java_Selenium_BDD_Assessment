@@ -19,7 +19,7 @@ public class AmazonShopping_steps_Tests {
 	static String price_2 = "";
 	static String name_1 = "";
 	static String price_1 = "";
-	String s = "Fujifilm Instax Mini 9 Instant Camera (Ice Blue)";
+	
 
 	@Given("I am on Amazon Homepage {string}")
 	public void i_am_on_amazon_homepage(String Url) {
@@ -93,7 +93,7 @@ public class AmazonShopping_steps_Tests {
 
 	@Then("Select camera")
 	public void select_camera() {
-
+                String s = "Fujifilm Instax Mini 9 Instant Camera (Ice Blue)";
 		driver.findElement(By.linkText(s)).click();
 
 	}
@@ -163,6 +163,7 @@ public class AmazonShopping_steps_Tests {
 		Assert.assertEquals(name_1, name_2);
 		System.out.println("Both Selected product name and price are same as the product in cart");
 		Thread.sleep(5000);
+		driver.quit();
 
 	}
 }
